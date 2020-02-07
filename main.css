@@ -1,0 +1,178 @@
+body {
+  margin: 0px;
+  font-family: sans-serif;
+}
+header {
+  background: #353434;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header hr {
+  display: none;
+}
+.top_banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  background: none;
+  padding: 20px 0px;
+}
+.top_banner-left {
+  color: #fff;
+}
+.top_banner-left h4 {
+  margin: 0px;
+}
+.top_banner-left span {
+  width: 100%;
+  text-align: right;
+  display: block;
+  font-size: 12px;
+  font-style: italic;
+  color: #bbb;
+}
+.top_banner-middle {
+}
+.top_banner-middle a {
+}
+.top_banner-middle a img {
+  max-width: 300px;
+}
+.top_banner-right {
+}
+.top_banner-right a {
+  color: #fff;
+}
+
+.menu_links {
+  width: 100%;
+}
+.menu_links nav {
+  width: 100%;
+  background: #999;
+}
+.menu_links nav > ul {
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+.menu_drop-down-parent {
+}
+.menu_drop-down-parent a {
+}
+.menu_drop-down-parent ul {
+}
+.menu_drop-down-child {
+  display: none;
+}
+.menu_drop-down-child a {
+}
+.menu_link {
+  list-style: none;
+}
+.menu_link a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*Hero*/
+.homepage_hero {
+  background-image: url(../images/jumpingGuy.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+.homepage_hero > div {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+.homepage_hero > div > h2 {
+  margin: 0px;
+  color: #333;
+  font-size: 40px;
+  padding: 0px 5px;
+  font-weight: 400;
+}
+.homepage_hero > div > h2:first-child {
+  display: inline-block;
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+.homepage_hero-cta {
+  margin: 20px 0px;
+  display: inline-block;
+  padding: 12px 24px;
+  background: #fff;
+  box-shadow: 1px 2px 6px #aaa;
+  text-decoration: none;
+  color: #565656;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+/*FAQ section*/
+.faq_section {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.faq_section-ctn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: none;
+  max-width: 2000px;
+  min-height: 100%;
+}
+.faq_section > div > a {
+  flex: 1;
+  margin: 20px;
+  height: 350px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  text-decoration: none;
+  position: relative;
+  box-shadow: 2px 2px 5px #aaa;
+  transition: all 400ms;
+}
+.faq_section > div > a:hover {
+  transform: translateY(-2px);
+  box-shadow: 1px 3px 5px #444;
+}
+.faq_section > div > a:hover > div > h3 {
+  color: #000;
+}
+.faq_section > div > a:nth-child(1) {
+  background-image: url(../images/girlHeadphones.jpg);
+}
+.faq_section > div > a:nth-child(2) {
+  background-image: url(../images/manCliff.jpg);
+}
+.faq_section > div > a:nth-child(3) {
+  background-image: url(../images/boxJumps.jpg);
+}
+.faq_section > div > a > div > h3 {
+  color: #444;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0px;
+  padding: 12px 20px;
+  font-weight: 800;
+  background: #fff;
+}
