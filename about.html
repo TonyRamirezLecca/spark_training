@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="./main.css" />
+    <script
+      src="https://kit.fontawesome.com/1859490de4.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Spark Training LLC</title>
+  </head>
+  <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml: true,
+          version: "v6.0"
+        });
+      };
+
+      (function(d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+
+    <!-- Your customer chat code -->
+    <div
+      class="fb-customerchat"
+      attribution="setup_tool"
+      page_id="118730469529045"
+      theme_color="#d9d126"
+      logged_in_greeting="Welcome to Spark Training! Let me know if you need any help."
+      logged_out_greeting="Welcome to Spark Training! Let me know if you need any help."
+    ></div>
+    <!-- End Facebook Chat-->
+
+    <header>
+        <div class="top_banner">
+                <div class="top_banner-left">
+                        <h4>"Find Your Spark." </h4>
+                        <span>-Josh Bryan </span>
+                </div>
+                <div class="top_banner-middle">
+                    <a href="index.html">
+                        <img class="" src="./images/logo.png">	
+                    </a>			    			
+                </div>
+                <div class="top_banner-right">
+                    <a class="tel" href="tel:+385 202 3401"><i class="fas fa-phone phone-icon"></i>(385) 202-3401</a>
+                </div>
+        </div>	
+            <hr>
+        <div class="menu_links">	
+              <nav >
+                <ul>
+                  <li class="menu_link"><a href="/">Home</a></li>
+                  <li class="menu_link"><a href="/services.html">Services</a></li>
+                  <li class="menu_link"><a href="/about.html">About</a></li>
+                  <li class="menu_link"><a href="/about.html#contact">Contact Us</a></li>
+                  <li class="menu_link"><a href="/blog">Blog</a></li>
+                  <li class="menu_link"><a href="/faq.html">FAQ</a></li>
+                </ul>
+              </nav><!-- #nav-menu-container -->		    		
+        </div>
+        
+      </header><!-- #header -->
+
+
+    <!--About SECTION-->
+    <section class="about_section">
+        <div class="about_spark-training">
+            <h1>About Spark Training</h1>
+            <p>Spark Training was made from one simple idea. One simple idea, turned into another, and soon there was a fire burning to change the fitness industry. Spark Training is for those who no longer want to waste their time and money by buying gimmicky and false fads of diets, workouts, and any other “magic pills” from a growing industry. Through working online with one-on-one clientele or in small groups, we deliver what you want. This includes teaching you about the things that matter: nutrition and exercise, not just exercise alone. You set the goal and we help you accomplish it while helping you understand how to maintain a new, healthier lifestyle. At Spark Training, we do one thing: turn even one spark into a fire.</br></br> One spark can start a fire, and one goal can change a life. So, what’s your spark?</p>
+        </div>
+
+        <section id="contact" class="contact-us_section" style="background-image: url(./images/climbingmountain.jpg)">
+            <form action="post" class="contact-us_form">
+                <h2>Have Questions? Send us a message</h2>
+                <input type="email" placeholder="email" requird/>
+                <input type="tel" placeholder="phone number"/>
+                <input textarea="text" rows="4" placeholder="message"/>
+                <button type="submit">Send</button> 
+            </form>
+        </section>
+
+
+        <div class="about_team-members">
+            <h1>Our Team Members</h1>
+            <p>A little bit about who we are.</p>
+            <div class="about_team-images-ctn">
+                <div class="team_member">
+                    <img src="./images/teammember1.jpg" />
+                    <h6>Josh Bryan</h6>
+                    <p>Lead Trainer</p>
+                </div>
+
+                <div class="team_member">
+                    <img src="./images/teammember2.jpg" />
+                    <h6>Miranda Bryan</h6>
+                    <p>Lead Marketer and Trainer</p>
+                </div>
+
+                <div class="team_member">
+                    <img src="./images/teammember3.jpg" />
+                    <h6>Matt Bleazard</h6>
+                    <p>Lead Developer and Accountant</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ENd About SECTION-->
+
+    <!-- start footer Area -->
+    <footer>
+      <div class="footer_wrapper">
+        <div>
+          <!--privacy policy and terms and conditions -->
+          <a href="/Privacy Policy.pdf">Privacy Policy</a>
+          <a href="/Terms and Conditions.pdf">Terms and Conditions</a>
+        </div>
+        <div class="top_banner-middle">
+          <a href="index.html">
+            <img class="" src="./images/logo.png" />
+          </a>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/sparktraining.jmb/"
+            ><i class="fab fa-facebook-square facebook-icon"></i
+          ></a>
+          <a href="https://www.instagram.com/sparktraining.jmb/"
+            ><i class="fab fa-instagram insta-icon"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

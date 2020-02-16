@@ -54,6 +54,9 @@ header hr {
   padding: 8px 20px;
   font-weight: 600;
 }
+.phone-icon {
+  margin-right: 10px;
+}
 
 .menu_links {
   width: 100%;
@@ -61,30 +64,63 @@ header hr {
 .menu_links nav {
   width: 100%;
   background: #999;
-  box-shadow: 0px 2px 4px #444;
+  box-shadow: 0px 2px 4px #222;
+  position: relative;
 }
 .menu_links nav > ul {
   margin: 0 auto;
-  padding: 20px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 800px;
 }
-.menu_drop-down-parent {
-}
+
 .menu_drop-down-parent a {
+  position: relative;
+}
+.menu_drop-down-parent > a:after {
+  content: "\f107";
+  position: absolute;
+  right: -15px;
+  top: 5%;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+}
+.menu_drop-down-parent:hover ul {
+  display: block;
 }
 .menu_drop-down-parent ul {
+  position: absolute;
+  margin: 0px;
+  background: #999;
+  padding: 10px !important;
+  box-shadow: 2px 2px 2px #222;
+  left: 0;
+  top: 85%;
+  display: none;
+  width: 150px;
 }
 .menu_drop-down-child {
-  display: none;
+  list-style: none;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+.menu_drop-down-child:first-child {
+  margin-top: -20px;
 }
 .menu_drop-down-child a {
 }
 .menu_link {
   list-style: none;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
 }
 .menu_link a {
   text-decoration: none;
@@ -168,13 +204,13 @@ header hr {
   color: #e0cc35;
   background: #999;
 }
-.faq_section > div > a:nth-child(1) {
+.faq_section > div > a:nth-child(3) {
   background-image: url(./images/girlHeadphones.jpg);
 }
 .faq_section > div > a:nth-child(2) {
   background-image: url(./images/manCliff.jpg);
 }
-.faq_section > div > a:nth-child(3) {
+.faq_section > div > a:nth-child(1) {
   background-image: url(./images/boxJumps.jpg);
 }
 .faq_section > div > a > div > h3 {
@@ -240,7 +276,9 @@ header hr {
   overflow: hidden;
   height: 100%;
   margin: 30px;
+  background: #fff;
 }
+
 .blog_item:nth-child(1) {
   background-image: url(./images/nutrition.jpg);
 }
@@ -266,8 +304,8 @@ header hr {
   align-items: center;
   padding: 30px 0px;
   flex-direction: column;
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 .blog_ctn {
   display: flex;
@@ -276,12 +314,12 @@ header hr {
   width: 100%;
   background: none;
   max-width: 2000px;
-  min-height: 100%;
+  height: 100%;
 }
 .blog_ctn > a {
   flex: 1;
   margin: 20px;
-  height: 350px;
+  height: 275px;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   text-decoration: none;
@@ -307,6 +345,51 @@ header hr {
   background: #999;
 }
 
+/*Contact us Form Section*/
+.contact-us_section {
+  background: #777;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-us_section form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 500px;
+  padding: 20px 40px;
+  background-color: rgb(36, 33, 38);
+}
+.contact-us_section h2 {
+  color: #eee;
+}
+.contact-us_section input {
+  width: 100%;
+  padding: 6px;
+  margin: 6px 0px;
+  border-radius: 4px;
+  border: none;
+  background: #eee;
+}
+.contact-us_section input[textarea] {
+}
+.contact-us_section button {
+  width: 200px;
+  padding: 8px 20px;
+  font-weight: 600;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background: #e0cc35;
+  color: #333;
+}
+
 /*Footer */
 footer {
   display: flex;
@@ -321,6 +404,7 @@ footer {
   max-width: 1200px;
   width: 100%;
   height: 400px;
+  padding: 0px 20px;
 }
 .footer_wrapper > div:first-child {
   display: flex;
@@ -335,4 +419,288 @@ footer {
   color: #fff;
   text-decoration: none;
   margin: 5px 0px;
+}
+.insta-icon {
+  margin-left: 10px;
+  font-size: 25px;
+}
+.facebook-icon {
+  font-size: 25px;
+}
+
+/*Services (pricing) Page*/
+.pricing_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pricing_choose-plan {
+  text-align: center;
+  color: #fff;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.pricing-ctn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  margin-bottom: 150px;
+  background: #ddd;
+  max-width: 350px;
+  border-radius: 5px;
+  box-shadow: 0px 6px 8px #222;
+}
+.pricing_title-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.pricing_title-wrapper h3 {
+  margin: 0px;
+  margin-top: 20px;
+}
+.pricing_title-wrapper p {
+  margin: 0px;
+  margin-bottom: 10px;
+}
+.pricing_title-wrapper h2 {
+  margin: 0px;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+.pricing_sub-text {
+  padding: 30px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #777;
+  font-size: 14px;
+  border-top: 3px solid #777;
+  max-width: 250px;
+}
+.pricing_description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pricing_description ul {
+  padding-left: 0px;
+}
+.pricing_description li {
+  list-style: none;
+  font-size: 14px;
+  margin: 15px 0px;
+  padding: 5px;
+}
+.pricing_description a {
+  background: rgb(238, 238, 48);
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+  box-shadow: 0px 4px 10px #ccc;
+  padding: 10px 20px;
+  margin: 10px 0px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+/* FAQ SECTION*/
+.faq_section {
+  display: flex;
+  flex-direction: column;
+  height: unset;
+  background-position: center;
+  background-size: cover;
+}
+.faq_section-title {
+  color: #fff;
+  font-size: 40px;
+  text-shadow: 2px 2px 2px #333;
+}
+.faq_section-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  padding: 40px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.faq {
+  max-width: 700px;
+  flex: 1;
+  padding: 10px 20px;
+  color: #fff;
+  background: rgb(40, 40, 40, 0.6);
+}
+.faq:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.faq:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.faq_title {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin: 0px;
+  padding: 10px 0px;
+}
+.faq_title span:first-child {
+  font-size: 20px;
+}
+.faq_title span:last-child {
+  font-size: 15px;
+}
+.plus_icon {
+}
+.minus_icon {
+}
+.hide_icon {
+  display: none !important;
+}
+
+.faq_answer {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 300ms;
+  max-width: 95%;
+}
+.show_answer {
+  max-height: 500px;
+  transition: all 300ms;
+  animation: showAnswer 1000ms forwards;
+}
+@keyframes showAnswer {
+  0% {
+    max-height: 0px;
+  }
+  100% {
+    max-height: 500px;
+  }
+}
+.faq_answer p {
+}
+
+/*About Section*/
+.about_section .contact-us_section {
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 100%;
+  margin: 100px 0px;
+}
+.about_section .contact-us_section form {
+  background: rgb(40, 40, 40, 0.8);
+  width: 100%;
+}
+.about_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about_spark-training {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.about_spark-training h1 {
+  font-size: 40px;
+  color: #fff;
+  margin: 10px;
+}
+.about_spark-training p {
+  color: #fff;
+  max-width: 800px;
+  text-align: center;
+  line-height: 25px;
+}
+.about_team-members {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+.about_team-members > h1 {
+  font-size: 40px;
+  color: #fff;
+  margin: 10px;
+  position: relative;
+}
+
+.about_team-members > p {
+  color: #fff;
+  max-width: 800px;
+  text-align: center;
+  line-height: 25px;
+}
+.about_team-images-ctn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.team_member {
+  flex: 1;
+  margin: 20px;
+  overflow: hidden;
+}
+.team_member img {
+  max-width: 280px;
+  border-radius: 10px;
+}
+.team_member h6 {
+  font-size: 20px;
+  color: #fff;
+  margin: 10px auto;
+  margin-top: 20px;
+  text-align: center;
+}
+.team_member p {
+  text-align: center;
+  color: #fff;
+  margin-top: 0px;
+  font-size: 14px;
+}
+
+/*CSS Effects*/
+.slide_and_sticky {
+  position: fixed;
+  top: -60px;
+  z-index: 99;
+  transform: translateY(60px);
+  transition: all 300ms;
+}
+header.addMargin {
+  margin-bottom: 60px;
+}
+
+/* Mobile */
+@media screen and (max-width: 1000px) {
+  .spark_ {
+    flex-direction: column;
+    text-align: center;
+    height: 300px;
+    padding: 40px 0px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer_wrapper {
+    flex-direction: column;
+    text-align: center;
+    height: 300px;
+    padding: 40px 0px;
+  }
 }
